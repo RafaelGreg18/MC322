@@ -1,1 +1,4 @@
-# Resoluções Labs da disciplina MC322 - Programação Orientada a Objetos
+# Aluno
+* Rafael Gregori de Souza - RA: 247346
+# Curso
+* Engenharia da Computação
