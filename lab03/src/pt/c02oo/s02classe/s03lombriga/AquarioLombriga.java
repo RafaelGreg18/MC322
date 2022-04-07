@@ -101,10 +101,8 @@ public class AquarioLombriga {
         }
     }
 
-    public void apresenta(){
-        for (int i = 0; i < this.aquario.length; i++){
-            System.out.print(this.aquario[i]);
-        }
-        System.out.println();
+    public String apresenta(){
+        String str = new String(this.aquario);
+        return str;
     }
 }
