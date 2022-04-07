@@ -34,8 +34,8 @@ public class Animacao{
     }
 
 
-    public void apresenta(){
-        this.lombriga.apresenta();
+    public String apresenta(){
+        return this.lombriga.apresenta();
     }
 
 
