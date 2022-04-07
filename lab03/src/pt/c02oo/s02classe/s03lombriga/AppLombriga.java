@@ -8,15 +8,13 @@ public class AppLombriga {
       String lombrigas[] = tk.recuperaLombrigas();
       
       for (int l = 0; l < lombrigas.length; l++)
-         System.out.println(lombrigas[l]);
+         Animacao anim = new Animacao(lombrigas[l]);
+         tk.gravaPasso(anim.apresenta());
+         for(int i = 0; i < Animacao.seq_acoes.length(); i++){
+            anim.passo();
+            tk.gravaPasso(anim.apresenta());
+        }
       
-      tk.gravaPasso("=====");
-      tk.gravaPasso("##O@@@##");
-      tk.gravaPasso("#O@@@###");
-      tk.gravaPasso("#O@@@@##");
-      tk.gravaPasso("O@@@@###");
-      tk.gravaPasso("@@@@O###");
-      tk.gravaPasso("#@@@@O##");
       
       tk.stop();
    }
